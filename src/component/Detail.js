@@ -21,12 +21,12 @@ function Detail() {
         </div>
         <div className="para para3">
             <h3>Smart Compatibility </h3>
-            <p>Check your compatibility score based on our proprietary compatibility calculator</p>
+            <p>Check your compatibility score based on our proprietary compatibility calculator.</p>
             <img className="img3" src={phone3} alt=""/>
         </div>
         <div className="para para4">
             <h3>Take control of your privacy</h3>
-            <p>You are in full control of your privacy. You decide who can see your information and how much information to reveal</p>
+            <p>You are in full control of your privacy. You decide who can see your information and how much information to reveal.</p>
             <img className="img4" src={phone4} alt=""/>
         </div>
     </div>
