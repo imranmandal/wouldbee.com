@@ -6,27 +6,33 @@ import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-d
 import About from "./component/About";
 import FAQ from "./component/FAQ/FAQ";
 import ContactUs from './component/Contact_Component/Contact';
+import ScrollToTop from "./component/ScrollToTop";
 
 function App() {
   return (
     
       <div className="App">
+        <ScrollToTop />
         <Router>
           <Switch>
             <Route exact path="/" >
+              <ScrollToTop />
               <Header />
               <Detail />            
             </Route>
 
             <Route path="/about">
+              <ScrollToTop />
               <About />
             </Route>
             
             <Route path="/FAQ">
+              <ScrollToTop />
               <FAQ />
             </Route>
 
             <Route path="/contact-us">
+              <ScrollToTop />
               <ContactUs />
             </Route>
 
