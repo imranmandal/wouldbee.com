@@ -18,8 +18,8 @@ function Footer() {
                 <h3>Help</h3>
                 <ul>
                     <li><a href="https://www.linkedin.com/company/would-bee/jobs/?viewAsMember=true">Career</a></li>
-                    <li><Link to="/FAQ"><a href="#">FAQ's</a></Link></li>
-                    <li><Link to="/contact-us"><a href="#">Contact Us</a></Link></li>
+                    <li><Link to="/FAQ"><a>FAQ's</a></Link></li>
+                    <li><Link to="/contact-us"><a>Contact Us</a></Link></li>
                 </ul>                
             </div>
             <div>
