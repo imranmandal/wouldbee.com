@@ -16,7 +16,7 @@ function Detail() {
         </div>
         <div className="para para2">
             <h3>Free Yet SAFE</h3>
-            <p>We are fanatic about our users safety. We take all possible measures to keep Fraudsters and Scammers away</p>
+            <p>We are fanatic about our users safety. We take all possible measures to keep Fraudsters and Scammers away.</p>
             <img className="img2" src={phone2} alt=""/>
         </div>
         <div className="para para3">
