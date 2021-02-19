@@ -7,8 +7,7 @@ import phone4 from '../Images/phone4.png'
 function Detail() {
   return (
     <div className="detail">
-        
-        
+    
         <div className="para para1">
             <h3>Truly Free Matrimony App - Zero Ads/Zero Payments</h3>
             <p>Every matrimony app offers free registration but asks for money to connect you to potential matches. Not us! We promise to never ask for money.</p>

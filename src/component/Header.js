@@ -1,8 +1,9 @@
-import React , { useState } from 'react'
+import React from 'react'
 import Navbar from './Navbar'
 import bg from '../Images/wouldbee.mp4'
  
 function Header() {
+  
   return (
     <header >
       <video className="bg" autoPlay muted loop >
