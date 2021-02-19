@@ -2,6 +2,8 @@ import React , { useState } from 'react';
 import Navbar from '../Navbar';
 import TelegramCard from './TelegramCard'
 import ReactPlayer from 'react-player';
+
+// TODO: reduce extra spacing
  
 function Telegram() {
     return (

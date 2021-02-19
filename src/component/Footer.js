@@ -1,6 +1,8 @@
 import React , { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
 import Copyright from './Copyright';
+
+// TODO: Social icons are coming out of circle
  
 function Footer() {
     
@@ -19,16 +21,19 @@ function Footer() {
                     <li onClick={handleClick}><Link to="/"><a>Home</a></Link></li>
                     <li onClick={handleClick}><Link to="/about"><a>About Us</a></Link></li>
                     <li onClick={handleClick}><Link to="/contact-us"><a>Contact Us</a></Link></li>
-                    <li><a href="https://blog.wouldbee.com/">Blog</a></li>
+                    <li><a href="https://www.linkedin.com/company/would-bee/jobs/?viewAsMember=true">Career</a></li>
                 </ul>                
             </div>
             <div>
                 <h3>Help</h3>
                 <ul>
-                    <li><a href="https://www.linkedin.com/company/would-bee/jobs/?viewAsMember=true">Career</a></li>
+                    <li><a href="https://blog.wouldbee.com/">Blog</a></li>
                     <li onClick={handleClick}><Link to="/FAQ"><a>FAQ</a></Link></li>
-                    <li><a href="https://www.wouldbee.com/privacy">Privacy Policy</a></li> 
-                    <li><a href="https://www.wouldbee.com/terms">Term of Use</a></li>
+                    {/* <li><a href="https://www.wouldbee.com/privacy">Privacy Policy</a></li> 
+                      <li><a href="https://www.wouldbee.com/terms">Term of Use</a></li> */}
+                      {/* <li><Link to="/privacy">Privacy Policy</Link> <span className="px-4" style={{ color: '#ffffff' }}>|</span></li> */}
+                      <li><Link to="/privacy">Privacy Policy</Link></li>
+                    <li><Link to="/terms">Terms Of Service</Link></li>
                 </ul>                
             </div>
             <div>

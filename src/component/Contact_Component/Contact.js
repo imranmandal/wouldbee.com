@@ -18,7 +18,7 @@ function ContactUs() {
                     <SubContact 
                         icon="comments"
                         title="Success Stories"
-                        para="Did you find your would-be  on Wouldbee? We would love to hear all about it !"
+                        para="Did you find your Would-Be on Would Bee? We would love to hear all about it!"
                         email="connect@wouldbee.com"
                     />
                 </div>

@@ -1,5 +1,7 @@
-import React , { useState } from 'react';
+import React from 'react';
 import Navbar from './Navbar';
+
+// TODO: remove white space after footer
 
 function About() {
   return (

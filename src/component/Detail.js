@@ -10,7 +10,7 @@ function Detail() {
     
         <div className="para para1">
             <h3>Truly Free Matrimony App - Zero Ads/Zero Payments</h3>
-            <p>Every matrimony app offers free registration but asks for money to connect you to potential matches. Not us! We promise to never ask for money.</p>
+            <p>Every matrimony app offers free registration but asks for money to connect you to potential matches. Not us!</p>
             <img className="img1" src={phone1} alt=""/>
         </div>
         <div className="para para2">
