@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  transition: all 3s ease;
 }
 
 body {
@@ -88,7 +87,6 @@ nav {
 
 .detail {
   position: relative;
-  /* height: 1600px; */
   padding: 5% 15%;
   background-color: #fff;
 }
