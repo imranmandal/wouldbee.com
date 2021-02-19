@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import bg from '../Images/wouldbee.mp4'
  
 function Header() {
+
+  useEffect(()=>(
+    window.scroll(0, 0)
+  ))
   
   return (
     <header >
