@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  transition: all 3s ease;
 }
 
 body {
@@ -20,7 +21,7 @@ nav {
 }
 
 .logo {
-  height: 70px;
+  height: 110px;
   padding: 20px;
   cursor: pointer;
 }
@@ -55,7 +56,7 @@ nav {
 
 .header-content p {
   font-size: 1.5rem;
-  margin-top: -25px;
+  margin-top: 0;
   font-weight: bold;
 }
 
@@ -73,9 +74,14 @@ nav {
   margin-top: 30px;
 }
 
+.download-btn a{
+  text-decoration: none;
+  color: #e11c74;
+}
+
 .download img {
   vertical-align: top;
-  margin: 0 0 0 10px;
+  margin: 5px 0 0 10px;
 }
 
 /* -----------Detail */
@@ -163,8 +169,10 @@ nav {
   cursor: pointer;
 }
 
-.faq-title h2 {
+.faq-title h3 {
   padding-left: 1.5rem;
+  padding-top: 1rem;
+  line-height: 2.5rem;
 }
 
 .faq-title i {
@@ -177,9 +185,9 @@ nav {
 
 .faq-para {
   border-left: 0.5rem solid #e5e8e8;
-  padding: 0 2em;
+  padding: 1rem 2rem;
   font-size: 1rem;
-  line-height: 2em;
+  line-height: 1.5em;
   color: #707b7c;
 }
 
@@ -199,19 +207,24 @@ nav {
 .sub-contact {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   flex: 1 1 200px;
   margin: 0 3rem 5rem 0;
 }
 
 .sub-contact .title-icon {
   font-size: 50px;
+  padding: 1rem 0;
   color: #e11c74;
 }
 
 .sub-contact p a {
   text-decoration: none;
   color: #707b7c;
+}
+
+.sub-contact h3{
+  padding: 1rem 0;
 }
 
 .sub-contact p i {
@@ -221,7 +234,7 @@ nav {
 /* -------------------------Telegram */
 
 .telegram-outer {
-  padding: 0 15% 10%;
+  padding: 0 15% 5%;
 }
 
 .telegram-outer .outer-p {
@@ -229,7 +242,7 @@ nav {
 }
 
 .telegram-inner {
-  padding-bottom: 15%;
+  padding-bottom: 10%;
   border-bottom: 2px solid #aab7b8;
 }
 
@@ -266,6 +279,10 @@ nav {
 .telegram-card i {
   font-size: 120px;
   color: #e11c74;
+}
+
+.telegram-card h2{
+  padding: 5px 10px;
 }
 
 .telegram-btn {
@@ -315,8 +332,39 @@ nav {
 
 .react-player {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 0;
+}
+
+
+
+
+/* ------------------------ privacy And terms*/
+
+.privacy-section, .terms-section{
+  padding: 0 15% 5%;
+}
+
+.privacy-section h5, .terms-section h5{
+  padding: 2rem 0 1rem 0;
+}
+
+.privacy-section p, .terms-section p{
+  line-height: 1.8rem;
+}
+
+.privacy-section .back-btn, .terms-section .back-btn{
+  color: #fff;
+  background-color: #e11c74;
+  border: none;
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.privacy-section .back-btn:hover, .terms-section .back-btn:hover{
+  box-shadow: 0 0 20px #bdc7c9;
+  background-color: #e11c74;
 }
 
 /* ------------------------- Footer */
@@ -325,7 +373,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
   padding: 2% 5%;
   background: #e11c74;
   color: #fff;
@@ -365,12 +412,11 @@ footer .social {
 
 .social a {
   color: #fff;
-
-  height: 25px;
-  width: 25px;
+  height: 45px;
+  width: 45px;
   text-align: center;
   border-radius: 50%;
-  padding: 8px;
+  padding: .5rem;
   transition: all 0.3s ease;
 }
 
@@ -418,7 +464,7 @@ footer .social {
 }
 
 .copyright p {
-  margin: -15px;
+  margin-bottom: -20px;
   font-size: smaller;
 }
 
@@ -438,10 +484,10 @@ footer .social {
     top: 70%;
   }
 
-  /* .telegram-video p{
-    font-size: 1em;
-  } */
+ 
 }
+
+
 /* min1200  */
 @media (min-width: 1200px) {
   .header h1 {
@@ -461,7 +507,7 @@ footer .social {
     padding-bottom: 8%;
   }
   .detail img {
-    height: 400px;
+    height: 350px;
     position: absolute;
   }
 
@@ -689,7 +735,7 @@ footer .social {
   }
 
   .telegram-video p {
-    top: 5%;
+    top: 10%;
     line-height: normal;
   }
 }
@@ -787,7 +833,7 @@ footer .social {
   }
 
   .react-player {
-    top: 45%;
+    top: 42%;
   }
 }
 
@@ -856,7 +902,7 @@ footer .social {
   }
 
   .react-player {
-    top: 60%;
+    top: 65%;
   }
 }
 

@@ -18,7 +18,7 @@ function Header() {
             <p>Pre-Launch Offer: Register Today For Lifetime Unrestricted Access</p>
             <div className="download-btn">
               <a className="download" href="">
-              <span>Download App</span>
+              Download App
                 
               <img src="https://img.icons8.com/material-rounded/24/000000/google-play.png"/>
               </a>

@@ -29,11 +29,8 @@ function Footer() {
                 <ul>
                     <li><a href="https://blog.wouldbee.com/">Blog</a></li>
                     <li onClick={handleClick}><Link to="/FAQ"><a>FAQ</a></Link></li>
-                    {/* <li><a href="https://www.wouldbee.com/privacy">Privacy Policy</a></li> 
-                      <li><a href="https://www.wouldbee.com/terms">Term of Use</a></li> */}
-                      {/* <li><Link to="/privacy">Privacy Policy</Link> <span className="px-4" style={{ color: '#ffffff' }}>|</span></li> */}
-                      <li><Link to="/privacy">Privacy Policy</Link></li>
-                    <li><Link to="/terms">Terms Of Service</Link></li>
+                    <li onClick={handleClick}><Link to="/privacy">Privacy Policy</Link></li>
+                    <li onClick={handleClick}><Link to="/terms">Terms Of Service</Link></li>
                 </ul>                
             </div>
             <div>

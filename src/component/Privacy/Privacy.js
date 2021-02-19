@@ -5,10 +5,10 @@ import Navbar from '../Navbar';
 // TODO: Fix styling. Change button color to pink.
 
 const Privacy = () => (
-    <section className="container-fluid privacy-section">
+    <section className="container-fluid">
         <Navbar />
-        <div className="row">
-            <div className="col-12 text-center py-3">
+        <div className="row privacy-section">
+            <div className="col-12 py-3">
                 <h1>PRIVACY POLICY</h1>
             </div>
             <div className="col-12">
@@ -230,7 +230,7 @@ const Privacy = () => (
                         <p>If you have any questions about this Privacy Policy, please contact us by email: <a href="mailto:support@wouldbee.com">support@wouldbee.com</a>.</p>
                     </li>
                     <Link to="/">
-                        <button className="btn btn-primary btn-sm mt-4" style={{ width: '40%', maxWidth: '200px' }}>Go Back</button>
+                        <button className="btn btn-primary btn-sm mt-4 back-btn" style={{ width: '40%', maxWidth: '200px' }}>Go Back</button>
                     </Link>
                 </ol>
             </div>

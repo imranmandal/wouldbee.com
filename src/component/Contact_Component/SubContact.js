@@ -7,7 +7,7 @@ function SubContact(props) {
     return (
         <div className="sub-contact">
             <i className={icon}></i>
-            <h2>{props.title}</h2>
+            <h3>{props.title}</h3>
             <p>{props.para}</p>
             <p>
                 <i className="fa fa-envelope" />
