@@ -6,7 +6,9 @@ function About() {
       
     <div>
         <Navbar />
-      <div className="about" style={{ height: '53vh' }}>
+      <div className="about" 
+      // style={{ height: '53vh' }}
+      >
             <h1>About us</h1>
             <p>Would Bee is embarking on a journey to make digital matrimony safe and affordable for every Indian. India has no dearth of matchmaking & matrimony services, including both offline and online ones. Would Bee is our sincere attempt to address their shortcomings. </p>
             <p>We are passionate about leveraging latest AI & Blockchain technologies to disrupt the Indian Matrimony market and deliver a cutting-edge product.</p>

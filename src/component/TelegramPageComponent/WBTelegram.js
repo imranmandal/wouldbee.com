@@ -39,17 +39,17 @@ function Telegram() {
                             />
                     </div>
                     <div className="telegram-btn">
-                        <button> 
+                        {/* <button>  */}
                             <a href="https://t.me/WouldBee_Bot">
-                                <i className="fa fa-paper-plane"></i>
                                 Register on Telegram 
+                                <i className="fa fa-paper-plane"></i>
                             </a>              
-                        </button>
+                        {/* </button> */}
                     </div>
                 </div>
 
                 <div className="telegram-video">
-                    {/* <p>This Youtube video explains how to Register for our Telegram service in just 5 minutes.</p> */}
+                    <p>This Youtube video explains how to Register for our Telegram service in just 5 minutes.</p>
                     
                     <ReactPlayer
                         className="react-player"

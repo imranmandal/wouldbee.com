@@ -14,6 +14,7 @@ function App() {
   return (
     
     <div className="App">
+      <div className="App-body">
         <Router>
           <Switch>
           
@@ -54,6 +55,7 @@ function App() {
           </Switch>
           <Footer />
         </Router>
+        </div>
       </div>
     
   );
