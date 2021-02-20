@@ -1,5 +1,11 @@
 html {
   scroll-behavior: smooth;
+}
+
+html,
+body,
+#root,
+.App {
   height: 100%;
 }
 
@@ -12,20 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow-x: hidden;
 }
-
-/* ----- this is for footer to stay at bottom */
-.App-body{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100vw;
-}
-
 
 nav {
   display: flex;
@@ -165,6 +158,9 @@ nav {
   color: #707b7c;
 }
 
+.about-us-container {
+  min-height: calc(100% - 318px);
+}
 /* --------------------------------FAQ's */
 
 .faq {
@@ -176,22 +172,24 @@ nav {
   border-bottom: 1px solid #d5dbdb;
 }
 
+.faq-d:last-child {
+  border-bottom: 0px;
+}
+
 .faq-title {
   display: flex;
   cursor: pointer;
 }
 
 .faq-title h3 {
-  font-size: 1.5rem;
   padding-left: 1.5rem;
-  padding-top: .5rem;
-  line-height: 2rem;
+  padding-top: 1rem;
+  line-height: 2.5rem;
 }
 
 .faq-title i {
   height: 30px;
   font-size: 30px;
-  line-height: 1rem;
   color: #e11c74;
   margin-top: 38px;
   transform: translate(0, -50%);
@@ -221,18 +219,14 @@ nav {
 .sub-contact {
   display: flex;
   flex-direction: column;
+  /* justify-content: space-around; */
   flex: 1 1 200px;
   margin: 0 3rem 5rem 0;
-}
-
-.sub-contact h3{
-  line-height: 2rem;
 }
 
 .sub-contact .title-icon {
   font-size: 50px;
   padding: 1rem 0;
-  margin: 0;
   color: #e11c74;
 }
 
@@ -252,7 +246,7 @@ nav {
 /* -------------------------Telegram */
 
 .telegram-outer {
-  padding: 0 15% 7%;
+  padding: 0 15% 8%;
 }
 
 .telegram-outer .outer-p {
@@ -260,7 +254,7 @@ nav {
 }
 
 .telegram-inner {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   border-bottom: 2px solid #aab7b8;
 }
 
@@ -303,44 +297,44 @@ nav {
   padding: 5px 10px;
 }
 
-
 .telegram-btn {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: fit-content;
+}
+
+.telegram-btn button {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  background-color: #e11c74;
+  border: none;
+  border-radius: 5px;
   font-size: 1.5rem;
 }
 
-
-.telegram-btn a {
-  text-decoration: none;
-  color: #fff;
-  background-color: #e11c74;
-  border-radius: 5px;
-  padding: 1rem 2rem;
-  transition: all .3s ease;
-  margin-left: 50%;
-  transform: translate(-50%, 0);
+.telegram-btn button:hover {
+  box-shadow: 0 0 20px #aab7b8;
 }
 
-.telegram-btn a:hover {
-  box-shadow: 0 0 20px #aab7b8;
+.telegram-btn button a {
+  text-decoration: none;
+  color: #fff;
   padding: 1rem 3rem;
 }
 
 .telegram-btn i {
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .telegram-video {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 85% 5%;
+  padding: 56.25% 5% 0%;
   align-items: center;
   text-align: center;
   position: relative;
-  padding-top: 0.25%;
 }
 
 .telegram-video p {
@@ -353,7 +347,7 @@ nav {
 
 .react-player {
   position: absolute;
-  top: 30%;
+  top: 5%;
   left: 0;
 }
 
@@ -398,16 +392,11 @@ nav {
 
 /* ------------------------- Footer */
 
-.footer-outer{
-  margin-top: auto;
-}
-
 footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 100%;
-  padding: 2% 5% 0;
+  padding: 2% 5% 0.5%;
   background: #e11c74;
   color: #fff;
   font-size: 120%;
@@ -442,6 +431,7 @@ footer .social {
   justify-content: space-between;
   width: 200px;
   margin-left: 0;
+  border-bottom: 0px !important;
 }
 
 .social a {
@@ -484,24 +474,24 @@ footer .social {
 
 /* ------------copyright */
 
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+}
+
 .copyright {
-  margin-bottom: 0;
-  margin-left: 50%;
-  transform: translate(-50%, 0);
+  /* padding: 0 20px; */
   color: #e699dc;
-  text-align: center;
 }
 
 .copyright p {
-  margin: 0;
   font-size: smaller;
+  margin-bottom: 0px !important;
 }
 
 /*----------------------------- wide displays */
 
 @media (max-width: 1200px) {
-  
- 
   .img1 {
     top: 100px;
   }
@@ -536,6 +526,7 @@ footer .social {
   }
   .detail img {
     height: 350px;
+    position: absolute;
   }
 
   .para {
@@ -610,13 +601,14 @@ footer .social {
     padding-bottom: 12%;
   }
   .detail img {
-    height: 350px;
+    height: 400px;
     position: absolute;
   }
 
   .para {
     width: 47%;
     padding: 0;
+    /* margin: 10% 0; */
     position: static;
   }
   .para h3 {
@@ -705,7 +697,7 @@ footer .social {
   }
 
   .detail img {
-    height: 300px;
+    height: 350px;
     position: absolute;
   }
 
@@ -764,20 +756,6 @@ footer .social {
     top: 10%;
     line-height: normal;
   }
-
-  nav{
-    padding: 0 4.5rem;
-  }
-
-  .telegram-btn {
-    font-size: 1.2rem;
-    padding: 0;
-  }
-
-  .telegram-btn i {
-    margin-left: .5rem;
-  }
-
 }
 
 /* ---------------mobile phones------------------ */
@@ -788,7 +766,8 @@ footer .social {
   }
 
   nav {
-    padding: 0 3rem;
+    padding: 0;
+    margin: 0;
   }
 
   .header {
@@ -817,7 +796,6 @@ footer .social {
 
   .detail {
     position: static;
-    height: 100%;
     margin: 0;
   }
   .detail img {
@@ -852,13 +830,9 @@ footer .social {
     flex-direction: column;
   }
 
-  .footer-top > div {
-    border-bottom: 2px solid #fff;
-    padding: 2rem 0;
-  }
-
-  .footer-top > div:last-child{
-    border: none;
+  .footer-top div {
+    border-bottom: 3px solid #fff;
+    margin-bottom: 16px;
   }
 
   .social {
@@ -880,22 +854,6 @@ footer .social {
   .react-player {
     top: 42%;
   }
-
-  .telegram-btn {
-    font-size: 1.2rem;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .telegram-btn a{
-    margin: 0;
-    transform: translate(0, 0);
-  }
-
-  .telegram-btn i {
-    margin-left: .2rem;
-  }
-
 }
 
 /* -----------------------low end device */
@@ -906,12 +864,14 @@ footer .social {
   }
 
   nav {
-    margin-left: 50%;
-    padding: auto 0;
-    transform: translate(-50%, 0);
+    padding: 0;
+    margin: 0;
   }
   .logo {
-    transform: translate(-50%, 0); 
+    height: 70px;
+    padding: 20px 0;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
   }
 
   .header {
@@ -979,23 +939,23 @@ footer .social {
   }
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 10px;
-}
+} */
 
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
-}
+} */
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: rgba(246, 10, 60, 0.5);
   border-radius: 10px;
-}
+} */
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
-}
+} */

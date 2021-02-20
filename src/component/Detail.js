@@ -1,8 +1,8 @@
 import React , { useState } from 'react'
-import phone2 from '../../Images/phone2.png'
-import phone1 from '../../Images/phone1.png'
-import phone3 from '../../Images/phone3.png'
-import phone4 from '../../Images/phone4.png'
+import phone1 from '../Images/phone1.png'
+import phone2 from '../Images/phone2.png'
+import phone3 from '../Images/phone3.png'
+import phone4 from '../Images/phone4.png'
  
 function Detail() {
   return (
