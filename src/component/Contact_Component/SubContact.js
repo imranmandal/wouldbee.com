@@ -6,12 +6,12 @@ function SubContact(props) {
 
     return (
         <div className="sub-contact">
-            <i className={icon}></i>
+            <i className={icon} />
             <h3>{props.title}</h3>
             <p>{props.para}</p>
             <p>
                 <i className="fa fa-envelope" />
-                <a href={email}>{props.email}</a>
+                <a href={email} >{props.email}</a>
             </p>
         </div>
   )

@@ -1,5 +1,5 @@
-import Header from "./component/Header";
-import Detail from "./component/Detail";
+import Header from "./component/Home/Header";
+import Detail from "./component/Home/Detail";
 import Footer from "./component/Footer";
 import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
 import About from "./component/About";

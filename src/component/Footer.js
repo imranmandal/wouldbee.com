@@ -16,8 +16,8 @@ function Footer() {
                     <h3>Would Bee</h3>
                     <ul>
                         <li onClick={handleClick}><Link to="/"><a>Home</a></Link></li>
-                        <li><Link to="/about"><a>About Us</a></Link></li>
-                        <li><Link to="/contact"><a>Contact Us</a></Link></li>
+                        <li onClick={handleClick}><Link to="/about"><a>About Us</a></Link></li>
+                        <li onClick={handleClick}><Link to="/contact"><a>Contact Us</a></Link></li>
                         <li><a href="https://www.linkedin.com/company/would-bee/jobs/?viewAsMember=true">Career</a></li>
                     </ul>                
                 </div>
@@ -25,9 +25,9 @@ function Footer() {
                     <h3>Help</h3>
                     <ul>
                         <li><a href="https://blog.wouldbee.com/">Blog</a></li>
-                        <li><Link to="/FAQ"><a>FAQ</a></Link></li>
-                        <li><Link to="/privacy">Privacy Policy</Link></li>
-                        <li><Link to="/terms">Terms Of Service</Link></li>
+                        <li onClick={handleClick}><Link to="/FAQ"><a>FAQ</a></Link></li>
+                        <li onClick={handleClick}><Link to="/privacy">Privacy Policy</Link></li>
+                        <li onClick={handleClick}><Link to="/terms">Terms Of Service</Link></li>
                     </ul>                
                 </div>
                 <div>
