@@ -2,14 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../Navbar'
 
-// TODO: Fix styling. Change button color to pink.
-
 const Terms = () => (
     <section className="container-fluid">
         <Navbar />
         <div className="row terms-section">
             <div className="col-12 py-3">
-                <h1>TERMS AND CONDITIONS</h1>
+                <h1>Terms & Conditions</h1>
             </div>
             <div className="col-12">
                 <p className="pl-4">Effective Date: <i>Nov. 1, 2020</i></p>
@@ -79,9 +77,9 @@ const Terms = () => (
                             
                         <p><b>Other</b></p>
                         <p>By becoming a Member of the Site/Service, you agree to receive certain specific emails from us. This Agreement, accepted upon use of the Site and further affirmed by becoming a Member of our Service, contains the entire agreement between you and the company regarding the use of the Site and/or the Service. If any provision of this Agreement is held invalid, the remainder of this Agreement shall continue in full force and effect. You are under an obligation to report any misuse or abuse of the Site. If you notice any abuse or misuse of the Site or anything which is in violation of this Agreement, you shall forthwith report such violation to us by writing to Customer Care. On receipt of such complaint, we may investigate such complaint and if necessary may terminate the membership of the Member responsible for such violation abuse or misuse without any refund of subscription fee. Any false complaint made by a Member shall make such Member liable for termination of his/her membership without any refund of the subscription fee. Please contact us with any questions regarding this Agreement.</p>
-                        <Link to="/">
+                        {/* <Link to="/">
                             <button className="btn btn-primary btn-sm mt-4 back-btn" style={{ width: '40%', maxWidth: '200px' }}>Go Back</button>
-                        </Link>
+                        </Link> */}
                             
                     </li>
                 </ol>

@@ -73,7 +73,7 @@ nav {
   margin-top: 30px;
 }
 
-.download-btn a{
+.download-btn a {
   text-decoration: none;
   color: #e11c74;
 }
@@ -221,7 +221,7 @@ nav {
   color: #707b7c;
 }
 
-.sub-contact h3{
+.sub-contact h3 {
   padding: 1rem 0;
 }
 
@@ -232,7 +232,7 @@ nav {
 /* -------------------------Telegram */
 
 .telegram-outer {
-  padding: 0 15% 5%;
+  padding: 0 15% 15%;
 }
 
 .telegram-outer .outer-p {
@@ -240,7 +240,7 @@ nav {
 }
 
 .telegram-inner {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   border-bottom: 2px solid #aab7b8;
 }
 
@@ -248,7 +248,7 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 5% 0;
+  padding: 3% 0;
 }
 
 .telegram-inner-upper a {
@@ -279,7 +279,7 @@ nav {
   color: #e11c74;
 }
 
-.telegram-card h2{
+.telegram-card h2 {
   padding: 5px 10px;
 }
 
@@ -299,7 +299,7 @@ nav {
   font-size: 1.5rem;
 }
 
-.telegram-btn button:hover{
+.telegram-btn button:hover {
   box-shadow: 0 0 20px #aab7b8;
 }
 
@@ -334,37 +334,45 @@ nav {
 
 .react-player {
   position: absolute;
-  top: 25%;
+  top: 5%;
   left: 0;
 }
 
-
-
-
 /* ------------------------ privacy And terms*/
 
-.privacy-section, .terms-section{
+.privacy-section,
+.terms-section {
   padding: 0 15% 5%;
 }
 
-.privacy-section h5, .terms-section h5{
+.privacy-section h5,
+.terms-section h5 {
   padding: 2rem 0 1rem 0;
 }
 
-.privacy-section p, .terms-section p{
+.privacy-section p,
+.terms-section p {
   line-height: 1.8rem;
 }
 
-.privacy-section .back-btn, .terms-section .back-btn{
+.back-btn {
   color: #fff;
   background-color: #e11c74;
   border: none;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   font-size: 1.2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out;
 }
 
-.privacy-section .back-btn:hover, .terms-section .back-btn:hover{
+.back-btn:hover {
+  background-color: #e11c74;
+  transform: scale(1.05);
+}
+
+.privacy-section .back-btn:hover,
+.terms-section .back-btn:hover {
   box-shadow: 0 0 20px #bdc7c9;
   background-color: #e11c74;
 }
@@ -418,7 +426,7 @@ footer .social {
   width: 45px;
   text-align: center;
   border-radius: 50%;
-  padding: .5rem;
+  padding: 0.5rem;
   transition: all 0.3s ease;
 }
 
@@ -485,10 +493,7 @@ footer .social {
   .img4 {
     top: 70%;
   }
-
- 
 }
-
 
 /* min1200  */
 @media (min-width: 1200px) {
@@ -828,6 +833,7 @@ footer .social {
   .telegram-outer {
     padding-bottom: 20%;
   }
+
   .telegram-video p {
     line-height: normal;
     font-size: 1.3rem;

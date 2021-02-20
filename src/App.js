@@ -8,7 +8,7 @@ import ContactUs from './component/Contact_Component/Contact';
 import WBTelegram from './component/TelegramPageComponent/WBTelegram'
 import Privacy from './component/Privacy/Privacy'
 import Terms from './component/Terms/Terms'
-import Navbar from "./component/Navbar";
+import NotFound from "./component/NotFound";
 
 function App() {
   return (
@@ -22,19 +22,19 @@ function App() {
             <Detail />            
           </Route>
 
-          <Route path="/about">  
+          <Route exact path="/about">  
             <About />
           </Route>
             
-          <Route path="/FAQ">
+          <Route exact path="/FAQ">
             <FAQ />
           </Route>
 
-          <Route path="/contact-us">
+          <Route exact path="/contact">
             <ContactUs />
           </Route>
 
-          <Route path="/WB-telegram">
+          <Route exact path="/telegram">
             <WBTelegram />
           </Route>
           
@@ -42,8 +42,12 @@ function App() {
             <Privacy />
           </Route>
           
-          <Route path="/terms">
+          <Route exact path="/terms">
             <Terms />
+          </Route>
+
+          <Route path="*">
+            <NotFound />
           </Route>
           
 

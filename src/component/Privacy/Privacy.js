@@ -2,14 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar';
 
-// TODO: Fix styling. Change button color to pink.
-
 const Privacy = () => (
     <section className="container-fluid">
         <Navbar />
         <div className="row privacy-section">
             <div className="col-12 py-3">
-                <h1>PRIVACY POLICY</h1>
+                <h1>Privacy Policy</h1>
             </div>
             <div className="col-12">
                 <p className="pl-4">Effective Date: <i>Nov. 1, 2020</i></p>
@@ -229,9 +227,9 @@ const Privacy = () => (
                         <h5><b>Contact Us</b></h5>
                         <p>If you have any questions about this Privacy Policy, please contact us by email: <a href="mailto:support@wouldbee.com">support@wouldbee.com</a>.</p>
                     </li>
-                    <Link to="/">
+                    {/* <Link to="/">
                         <button className="btn btn-primary btn-sm mt-4 back-btn" style={{ width: '40%', maxWidth: '200px' }}>Go Back</button>
-                    </Link>
+                    </Link> */}
                 </ol>
             </div>
         </div>

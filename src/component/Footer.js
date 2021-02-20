@@ -1,8 +1,6 @@
 import React , { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
 import Copyright from './Copyright';
-
-// TODO: Social icons are coming out of circle
  
 function Footer() {
     
@@ -19,8 +17,8 @@ function Footer() {
                 <h3>Would Bee</h3>
                 <ul>
                     <li onClick={handleClick}><Link to="/"><a>Home</a></Link></li>
-                    <li onClick={handleClick}><Link to="/about"><a>About Us</a></Link></li>
-                    <li onClick={handleClick}><Link to="/contact-us"><a>Contact Us</a></Link></li>
+                    <li><Link to="/about"><a>About Us</a></Link></li>
+                    <li><Link to="/contact"><a>Contact Us</a></Link></li>
                     <li><a href="https://www.linkedin.com/company/would-bee/jobs/?viewAsMember=true">Career</a></li>
                 </ul>                
             </div>
@@ -28,17 +26,18 @@ function Footer() {
                 <h3>Help</h3>
                 <ul>
                     <li><a href="https://blog.wouldbee.com/">Blog</a></li>
-                    <li onClick={handleClick}><Link to="/FAQ"><a>FAQ</a></Link></li>
-                    <li onClick={handleClick}><Link to="/privacy">Privacy Policy</Link></li>
-                    <li onClick={handleClick}><Link to="/terms">Terms Of Service</Link></li>
+                    <li><Link to="/FAQ"><a>FAQ</a></Link></li>
+                    <li><Link to="/privacy">Privacy Policy</Link></li>
+                    <li><Link to="/terms">Terms Of Service</Link></li>
                 </ul>                
             </div>
             <div>
             <h3>Channels</h3>
                 <ul>
-                    <li onClick={handleClick}><a href="#">Android App</a></li>
-                    <li onClick={handleClick}><Link to="/WB-telegram"><a>Would Bee on Telegram</a></Link></li>
-                    <li onClick={handleClick}><a href="#">Web (Coming Soon)</a></li>
+                    <li><a href="#">Android App</a></li>
+                    <li><Link to="/telegram"><a>Telegram Bot</a></Link></li>
+                    <li><a href="#">Web (Coming Soon)</a></li>
+                    <li><a href="#">iOS (Coming Soon)</a></li>
                 </ul>
             </div>
             <div>
@@ -54,9 +53,6 @@ function Footer() {
         <div className="footer-bottom">
             <Copyright />
         </div>
-            
-            
-            
             
         </footer>
         

@@ -6,7 +6,7 @@ function ContactUs() {
     return (
         <div>
             <Navbar />
-            <div className="contact">
+            <div className="contact" style ={{ height: '53vh' }}>
                 <h1>Contact Us</h1>
                 <div className="contactS">
                     <SubContact 
