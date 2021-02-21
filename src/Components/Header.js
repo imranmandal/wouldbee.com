@@ -1,18 +1,26 @@
 import React, { useEffect } from 'react'
 import Navbar from './Navbar'
 import bg from '../Images/wouldbee.mp4'
+import poster from '../Images/poster.png'
  
 function Header() {
 
   useEffect(()=>(
     window.scroll(0, 0)
   ))
+
+  function videoOnProgress(){
+    
+  }
   
   return (
     <header >
-      <video className="bg" autoPlay muted loop >
-        <source src={bg} type="video/mp4" />
-      </video>
+      <div id="video">
+        <video onProgress={videoOnProgress} className="bg" autoPlay muted loop >
+          <source src={bg} type="video/mp4" />
+        </video>
+      </div>
+      
       <div className="header" >
         <Navbar/>
         

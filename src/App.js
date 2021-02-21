@@ -15,6 +15,7 @@ function App() {
     
     <div className="App">
         <Router>
+          <div className="App-body">
           <Switch>
           
           <Route exact path="/" >
@@ -50,9 +51,10 @@ function App() {
             <NotFound />
           </Route>
           
-
+          
           </Switch>
           <Footer />
+          </div>
         </Router>
       </div>
     
