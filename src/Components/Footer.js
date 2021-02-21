@@ -14,7 +14,7 @@ function Footer() {
         
         <div className="footer-top">
             <div>
-                <h3>Would Bee</h3>
+                <h5>Would Bee</h5>
                 <ul>
                     <li onClick={handleClick}><Link to="/"><a>Home</a></Link></li>
                     <li><Link to="/about"><a>About Us</a></Link></li>
@@ -23,7 +23,7 @@ function Footer() {
                 </ul>                
             </div>
             <div>
-                <h3>Help</h3>
+                <h5>Help</h5>
                 <ul>
                     <li><a href="https://blog.wouldbee.com/">Blog</a></li>
                     <li><Link to="/FAQ"><a>FAQ</a></Link></li>
@@ -32,7 +32,7 @@ function Footer() {
                 </ul>                
             </div>
             <div>
-            <h3>Channels</h3>
+                <h5>Channels</h5>
                 <ul>
                     <li><a href="#">Android App</a></li>
                     <li><Link to="/telegram"><a>Telegram Bot</a></Link></li>
@@ -41,7 +41,7 @@ function Footer() {
                 </ul>
             </div>
             <div>
-                <h3 className="social-h3">Follow Us</h3>
+                <h5 className="social-h3">Follow Us</h5>
                 <div className="social">
                     <a className="facebook" href="https://www.facebook.com/WouldBeeFB"><i className="fa fa-facebook"></i></a>
                     <a className="instagram" href="https://www.instagram.com/wouldbee_insta/"><i className="fa fa-instagram"></i></a>

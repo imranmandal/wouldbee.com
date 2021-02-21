@@ -413,17 +413,18 @@ footer {
 
 .footer-top ul li {
   list-style: none;
-  padding: 0.5em 0;
+  padding: 0.2em 0;
 }
 
 .footer-top ul li a {
   text-decoration: none;
   color: #fff;
   font-weight: 30px;
+  font-size: 0.9rem;
 }
 
 footer .social-h3 {
-  margin-left: 5px;
+  margin-left: 4px;
 }
 
 footer .social {
@@ -485,7 +486,8 @@ footer .social {
 }
 
 .copyright p {
-  font-size: smaller;
+  /* font-size: smaller; */
+  font-size: 0.8rem;
   margin-bottom: 0px !important;
 }
 

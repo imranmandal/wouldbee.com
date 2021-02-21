@@ -1,14 +1,14 @@
-import Header from "./component/Header";
-import Detail from "./component/Detail";
-import Footer from "./component/Footer";
 import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
-import About from "./component/About";
-import FAQ from "./component/FAQ/FAQ";
-import ContactUs from './component/Contact_Component/Contact';
-import WBTelegram from './component/TelegramPageComponent/WBTelegram'
-import Privacy from './component/Privacy/Privacy'
-import Terms from './component/Terms/Terms'
-import NotFound from "./component/NotFound";
+import Header from "./Components/Header";
+import Detail from "./Components/Detail";
+import Footer from "./Components/Footer";
+import About from "./Components/About";
+import FAQ from "./Components/FAQ/FAQ";
+import ContactUs from './Components/Contact/Contact';
+import WBTelegram from './Components/Telegram/Telegram'
+import Privacy from './Components/Privacy/Privacy'
+import Terms from './Components/Terms/Terms'
+import NotFound from "./Components/NotFound";
 
 function App() {
   return (

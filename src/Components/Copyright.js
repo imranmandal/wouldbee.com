@@ -1,18 +1,12 @@
-import React , { useState } from 'react'
+import React from 'react'
  
 function Copyright() {
   return (
     <div className="copyright">
         <p> ©2020-2021 wouldbee.com </p>
-    </div>
-
-
-
-
-
-    
+    </div>    
   )
 }
  
-export default Copyright
+export default Copyright;
  

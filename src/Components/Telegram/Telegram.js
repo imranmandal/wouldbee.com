@@ -1,4 +1,4 @@
-import React , { useState } from 'react';
+import React from 'react';
 import Navbar from '../Navbar';
 import TelegramCard from './TelegramCard'
 import ReactPlayer from 'react-player';
