@@ -165,9 +165,7 @@ nav {
   color: #707b7c;
 }
 
-.about-us-container {
-  min-height: calc(100% - 318px);
-}
+
 /* --------------------------------FAQ's */
 
 .faq {
@@ -266,7 +264,6 @@ nav {
 
 .telegram-inner {
   padding-bottom: 4%;
-  /* border-bottom: 2px solid #aab7b8; */
 }
 
 .telegram-inner-upper {
