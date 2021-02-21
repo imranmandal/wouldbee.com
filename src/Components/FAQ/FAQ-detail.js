@@ -11,7 +11,7 @@ function FAQd(props) {
     <div className="faq-d">
         <div onClick={handleClick} className="faq-title">
             <i className="fa fa-plus" />
-            <h3>{props.title}</h3>
+            <h5>{props.title}</h5>
         </div>
         
         {

@@ -188,10 +188,11 @@ nav {
 }
 
 .faq-title i {
-  height: 30px;
-  font-size: 30px;
+  height: 25px;
+  font-size: 22px;
   color: #e11c74;
-  margin-top: 38px;
+  margin-top: 14px;
+  margin-right: 10px;
   transform: translate(0, -50%);
 }
 
@@ -250,12 +251,15 @@ nav {
 }
 
 .telegram-outer .outer-p {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  line-height: 1.5em;
   color: #707b7c;
 }
 
 .telegram-inner {
-  padding-bottom: 5%;
-  border-bottom: 2px solid #aab7b8;
+  padding-bottom: 4%;
+  /* border-bottom: 2px solid #aab7b8; */
 }
 
 .telegram-inner-upper {
