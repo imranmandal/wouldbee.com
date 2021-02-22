@@ -39,12 +39,10 @@ function Telegram() {
                             />
                     </div>
                     <div className="telegram-btn">
-                        <button> 
-                            <a href="https://t.me/WouldBee_Bot">
-                                <i className="fa fa-paper-plane"></i>
-                                Register on Telegram 
-                            </a>              
-                        </button>
+                        <a className="telegram-btn-a" href="https://t.me/WouldBee_Bot">
+                            <i className="fa fa-paper-plane"></i>
+                            Register on Telegram 
+                        </a> 
                     </div>
                 </div>
 

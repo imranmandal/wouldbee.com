@@ -13,7 +13,7 @@ body,
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 body {
@@ -52,9 +52,13 @@ nav {
 }
 
 .bg {
+  width: auto;
+  height: 100%;
   position: fixed;
   z-index: -1;
 }
+
+
 
 .header-content {
   position: absolute;
@@ -81,6 +85,10 @@ nav {
   color: #e11c74;
   font-size: 20px;
   padding: 15px 20px;
+}
+
+.download i{
+  padding: 0 5px;
 }
 
 .download-btn {
@@ -256,7 +264,6 @@ nav {
 }
 
 .telegram-outer .outer-p {
-  padding: 1rem 1rem 0rem 1rem;
   font-size: 1.1rem;
   line-height: 2em;
   color: #707b7c;
@@ -306,22 +313,22 @@ nav {
 }
 
 .telegram-btn {
-  margin-left: 50%;
-  transform: translate(-50%, 0);
-  text-align: center;
-  width: fit-content;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.telegram-btn button {
-  display: flex;
-  flex-direction: row;
+.telegram-btn a{
+  color: #fff;
+  text-decoration: none;
   background-color: #e11c74;
   border: none;
   border-radius: 5px;
   font-size: 1.5rem;
+  padding: 1rem;
 }
 
-.telegram-btn button:hover {
+.telegram-btn a:hover {
+  color: #fff;
   box-shadow: 0 0 20px #aab7b8;
 }
 
@@ -410,6 +417,7 @@ footer {
   font-size: 120%;
   margin-top: auto;
   margin-bottom: 0px;
+  width: 100%;
 }
 
 .footer-top {
@@ -486,22 +494,26 @@ footer .social {
 /* ------------copyright */
 
 .footer-bottom {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .copyright {
-  /* padding: 0 20px; */
   color: #e699dc;
 }
 
 .copyright p {
-  /* font-size: smaller; */
   font-size: 0.8rem;
   margin-bottom: 0px !important;
 }
 
 /*----------------------------- wide displays */
+
+@media (min-width: 1010px){
+  .bg{
+    width: 100%;
+    height: auto;
+  }
+}
 
 @media (max-width: 1200px) {
   .img1 {
@@ -518,7 +530,8 @@ footer .social {
   }
 }
 
-/* min1200  */
+/*------------------ min1200  */
+
 @media (min-width: 1200px) {
   .header h1 {
     font-size: 50px;
@@ -595,6 +608,8 @@ footer .social {
 /* ---------------Desktop and Laptop------------- */
 
 @media (min-width: 1024px) and (max-width: 1200px) {
+  
+
   .header h1 {
     font-size: 50px;
   }
@@ -688,7 +703,8 @@ footer .social {
   }
 
   .bg {
-    width: cover;
+    width: auto; 
+    height: 100%;
   }
 
   .header h1 {
@@ -707,16 +723,17 @@ footer .social {
     margin: 0;
   }
 
-  .detail img {
-    height: 350px;
-    position: absolute;
-  }
+  
 
   .para {
     width: 62%;
     padding: 0;
     margin: 10% 0;
     position: static;
+  }
+  .para img {
+    height: 300px;
+    position: absolute;
   }
   .para h3 {
     font-size: 2em;
@@ -793,8 +810,8 @@ footer .social {
   }
 
   .bg {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -847,17 +864,17 @@ footer .social {
   }
 
   .telegram-outer {
-    padding-bottom: 20%;
+    padding: 0 10% 20%;
   }
 
   .telegram-video p {
     line-height: normal;
     font-size: 1.3rem;
-    top: 15%;
+    top: 0;
   }
 
   .react-player {
-    top: 42%;
+    top: 20%;
   }
 }
 
@@ -866,6 +883,10 @@ footer .social {
   body {
     padding: 0;
     margin: 0;
+  }
+
+  .App-body{
+    overflow-x: hidden;
   }
 
   nav {
@@ -878,6 +899,11 @@ footer .social {
     transform: translate(-40%, 0);
   }
 
+
+  .bg{
+    height: 100%;
+    width: auto;
+  }
   .header {
     height: 100vh;
     width: 100vw;
@@ -909,36 +935,21 @@ footer .social {
     text-align: center;
   }
 
-  .telegram-outer {
-    padding-bottom: 30%;
-  }
+
 
   .telegram-video {
-    height: 50%;
-    padding: auto 0 !important;
-  }
-
-  .telegram-video p {
-    top: 15%;
-    font-size: 1rem;
+    height: 40%;
   }
 
   .react-player {
-    top: 65%;
+    top: 20%;
   }
-}
 
-@media (min-aspect-ratio: 16/9) {
-  .bg {
-    width: 100%;
-    height: auto;
+  .telegram-btn a{
+    font-size: 1.2rem;
   }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  .bg {
-    width: auto;
-    height: 100%;
+  .telegram-btn a i{
+    margin-right: 5px;
   }
 }
 

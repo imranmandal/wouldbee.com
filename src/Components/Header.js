@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
-import bg from '../Images/wouldbee.mp4'
-import poster from '../Images/poster.png'
+import wideBg from '../Images/wouldbee.mp4'
+import narrowBg from '../Images/WouldbeeMobile.mp4'
+import narrowPoster from '../Images/narrowPoster.png'
+import widePoster from '../Images/widePoster.png'
  
 function Header() {
 
@@ -9,16 +11,13 @@ function Header() {
     window.scroll(0, 0)
   ))
 
-  function videoOnProgress(){
-    
-  }
-  
+
   return (
     <header >
-      <div id="video">
-        <video onProgress={videoOnProgress} className="bg" autoPlay muted loop >
-          <source src={bg} type="video/mp4" />
-        </video>
+      <div >
+          <video id="video" className="bg" poster={window.innerWidth <= "768" ? (narrowPoster) : (widePoster)} autoPlay muted loop >
+            <source src={window.innerWidth <= "768" ? (narrowBg) :(wideBg)} type="video/mp4" />            
+          </video>
       </div>
       
       <div className="header" >
@@ -30,14 +29,11 @@ function Header() {
             <p>Pre-Launch Offer: Register Today For Lifetime Unrestricted Access</p>
             <div className="download-btn">
               <a className="download" href="">
-              Download App
+                Download App
                 
-              <img src="https://img.icons8.com/material-rounded/24/000000/google-play.png"/>
+              <i className="fab fa-google-play"></i>
               </a>
-            </div>
-            
-            
-            
+            </div>            
         </div>
       </div>
     </header>
