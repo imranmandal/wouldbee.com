@@ -4,8 +4,14 @@ import Copyright from './Copyright';
  
 function Footer() {
     
+    const [click, setClick] = useState(true);
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    }, [click]);
+
     function handleClick(){
-        window.scrollTo(0, 0)
+        setClick(prevValue=> !prevValue);
     }
    
   return (

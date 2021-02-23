@@ -7,9 +7,9 @@ import widePoster from '../Images/widePoster.png'
  
 function Header() {
 
-  useEffect(()=>(
-    window.scroll(0, 0)
-  ))
+  useEffect( ()=>{
+    window.scrollTo(0,0);
+  }, []);
 
 
   return (

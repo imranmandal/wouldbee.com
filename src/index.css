@@ -40,6 +40,7 @@ nav {
 }
 
 .header {
+  position: relative;
   text-align: center;
   height: 100vh;
   background: linear-gradient(
@@ -812,8 +813,6 @@ footer .social {
   .bg {
     height: auto;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .detail {
@@ -841,6 +840,12 @@ footer .social {
 
   .faq {
     padding: 5% 10%;
+  }
+
+
+  .privacy-section,
+  .terms-section {
+    padding: 0 10% 5%;
   }
 
   footer {
@@ -883,11 +888,9 @@ footer .social {
   body {
     padding: 0;
     margin: 0;
-  }
-
-  .App-body{
     overflow-x: hidden;
   }
+
 
   nav {
     padding: 0;
@@ -907,7 +910,7 @@ footer .social {
   .header {
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     padding: 0;
   }
   .header h1 {
@@ -937,6 +940,11 @@ footer .social {
   }
 
 
+  .privacy-section,
+  .terms-section {
+    padding: 0 5% 5%;
+  }
+
 
   .telegram-video {
     height: 40%;
@@ -960,6 +968,7 @@ footer .social {
     height: 100%;
     width: auto;
   }
+
 }
 
 /* ::-webkit-scrollbar {

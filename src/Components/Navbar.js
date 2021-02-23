@@ -4,12 +4,8 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
 
-  useEffect(()=>(
-    window.scroll(0, 0)
-  ))
-
   return (
-    <nav>
+    <nav id="top">
         <Link to="/" ><img className="logo" src={logo} alt=""/></Link>
     </nav>
   )
