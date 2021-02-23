@@ -15,7 +15,7 @@ function Header() {
   return (
     <header >
       <div >
-          <video id="video" className="bg" poster={window.innerWidth <= "768" ? (narrowPoster) : (widePoster)} autoPlay muted loop >
+          <video id="video" className="bg" autoPlay muted loop poster={window.innerWidth <= "768" ? (narrowPoster) : (widePoster)} >
             <source src={window.innerWidth <= "768" ? (narrowBg) :(wideBg)} type="video/mp4" />            
           </video>
       </div>

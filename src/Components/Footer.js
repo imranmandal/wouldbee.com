@@ -5,7 +5,7 @@ import Copyright from './Copyright';
 function Footer() {
     
     function handleClick(){
-        window.scroll(0, 0)
+        window.scrollTo(0, 0)
     }
    
   return (
@@ -17,8 +17,8 @@ function Footer() {
                 <h5>Would Bee</h5>
                 <ul>
                     <li onClick={handleClick}><Link to="/"><a>Home</a></Link></li>
-                    <li><Link to="/about"><a>About Us</a></Link></li>
-                    <li><Link to="/contact"><a>Contact Us</a></Link></li>
+                    <li onClick={handleClick}><Link to="/about"><a>About Us</a></Link></li>
+                    <li onClick={handleClick}><Link to="/contact"><a>Contact Us</a></Link></li>
                     <li><a href="https://www.linkedin.com/company/would-bee/jobs/?viewAsMember=true">Career</a></li>
                 </ul>                
             </div>
@@ -26,8 +26,8 @@ function Footer() {
                 <h5>Help</h5>
                 <ul>
                     <li><a href="https://blog.wouldbee.com/">Blog</a></li>
-                    <li><Link to="/FAQ"><a>FAQ</a></Link></li>
-                    <li><Link to="/privacy">Privacy Policy</Link></li>
+                    <li onClick={handleClick}><Link to="/FAQ"><a>FAQ</a></Link></li>
+                    <li onClick={handleClick}><Link to="/privacy">Privacy Policy</Link></li>
                     <li><Link to="/terms">Terms Of Service</Link></li>
                 </ul>                
             </div>
@@ -35,7 +35,7 @@ function Footer() {
                 <h5>Channels</h5>
                 <ul>
                     <li><a href="#">Android App</a></li>
-                    <li><Link to="/telegram"><a>Telegram Bot</a></Link></li>
+                    <li onClick={handleClick}><Link to="/telegram"><a>Telegram Bot</a></Link></li>
                     <li><a href="#">Web (Coming Soon)</a></li>
                     <li><a href="#">iOS (Coming Soon)</a></li>
                 </ul>
