@@ -34,7 +34,7 @@ function Footer() {
             <div>
                 <h5>Channels</h5>
                 <ul>
-                    <li><a href="#">Android App</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=apptivism.would_bee.app">Android App</a></li>
                     <li onClick={handleClick}><Link to="/telegram"><a>Telegram Bot</a></Link></li>
                     <li><a href="#">Web (Coming Soon)</a></li>
                     <li><a href="#">iOS (Coming Soon)</a></li>
